@@ -31,7 +31,7 @@ A product needs to have the following information:
 ## Prerequisites:
 - Rename .env.example to .env
 - php artisan key:generate
-- composer install
+- composer install (Composer 2.1.1)
 - Create a database named "backend_coding_test"
 - php artisan migrate
 
