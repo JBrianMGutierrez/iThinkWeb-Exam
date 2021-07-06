@@ -27,8 +27,10 @@ A product needs to have the following information:
 - Say for example, we need a feature where we can display featured products. How would you go about implementing this feature? (You don't need to write code for this, just describe how would you implement it)
 
 
-## Instructions on how to set up the application.
+# Instructions on how to set up the application.
 ## Prerequisites:
+- Rename .env.example to .env
+- php artisan key:generate
 - composer install
 - Create a database named "backend_coding_test"
 - php artisan migrate
