@@ -42,6 +42,11 @@ A product needs to have the following information:
 ## Automated Testing
 - php artisan test
 
+## APIs Protected are by Passport
+- They are protected by Passport. First you need to register on this route "api/register" use this payload keys to register: name, email, password.
+- After registering you need to login using this route "api/login" use this payload keys to login: email, password. You'll receive token as a response.
+- Use the token in your Authorization Header with this format "Bearer YOUR_TOKEN".
+
 ## Say for example, we need a feature where we can display featured products. How would you go about implementing this feature?
 - Create a column in Products table "featured" with datatype of tinyint(1) 1 if you want to display as featured then 0 don't display as featured.
 - Have front-end that selects items to be featured.
