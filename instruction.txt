@@ -1,0 +1,13 @@
+Prerequisites:
+- composer install
+- Create a database named "backend_coding_test"
+- php artisan migrate
+
+Populate the product data:
+- php artisan tinker
+- Product::factory()->count(100)->create()
+
+Say for example, we need a feature where we can display featured products. How would you go about implementing this feature?
+- Create a column in Products table "featured" with datatype of tinyint(1) 1 if you want to display as featured then 0 don't display as featured.
+- Have front-end that selects items to be featured.
+- Then get data where you only want records with columns "featured" is 1.
